@@ -20,7 +20,7 @@ An instance of `MongoQueue` allows you to start enqueuing items to be retrieved 
 ```js
 import { MongoQueue } from '@universal-packages/mongodb-queue'
 
-const mongoQueue = new MongoQueue({ identifier: 'my-app' })
+const mongoQueue = new MongoQueue({ identifier: 'my-queue', url: 'mongodb://localhost:27017/my-app' })
 
 await mongoQueue.connect()
 
